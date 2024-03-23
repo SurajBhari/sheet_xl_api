@@ -8,7 +8,7 @@ sheets_base_url = f"https://docs.google.com/spreadsheets/d/"
 
 sheets = Sheets.from_files('client_secrets.json', 'storage.json')
 
-def get_sheet(id, sheet_id=0):
+def get_sheet(id, sheet_id=0): 
     url = sheets_base_url + id
     s = sheets.get(url)
     return s.sheets[sheet_id]
@@ -21,6 +21,8 @@ def slash():
     if not id_:
         return 'No id provided'
     s = get_sheet(id_, sheet_id=int(sheet_id))
+    print(sheet_id)
+    print(id_)
     return s.values()
 
 
@@ -67,4 +69,4 @@ def c(index):
     except IndexError:
         return 'Index out of range'
     
-app.run(debug=True)
+app.run(host="0.0.0.0", port=54321)
