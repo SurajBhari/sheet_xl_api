@@ -11,10 +11,10 @@ Base Url - http://surajbhari.info:54321
 
 
 # Routes
-`/` - gives back json in Row wise. 
-`/rf` - same as `/`
-`/cf` - gives back json in Column wise.
-`/c/<number>` - gives column at that number. starts at 0.
-`/r/<number>` - gives row at that number. starts at 0.
+- `/` - gives back json in Row wise. 
+- `/rf` - same as `/`
+- `/cf` - gives back json in Column wise.
+- `/c/<number>` - gives column at that number. starts at 0.
+- `/r/<number>` - gives row at that number. starts at 0.
 
 This is one of those project that I just made for someone else. and is not actively maintaining it. still if you find it not working. DM me on discord.
